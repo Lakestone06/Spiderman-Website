@@ -1,0 +1,513 @@
+body{
+
+    margin:0;
+
+    min-height:100vh;
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    background-color:#061826;
+
+    color:white;
+}
+
+
+/* HOMEPAGE */
+
+.hero{
+
+    min-height:100vh;
+
+    background-image:url("spideypic.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    align-items:center;
+}
+
+.hero-text{
+
+    width:420px;
+
+    margin-left:70px;
+
+    padding:50px;
+
+    background-color:rgba(0,0,0,0.65);
+
+    border-left:6px solid #e50914;
+
+    border-radius:20px;
+}
+
+.hero-text h1{
+
+    font-size:25px;
+
+    text-shadow:0 0 15px red;
+    transition: 0.3s;
+}
+
+.hero-text h1:hover{
+
+    transform:scale(1.03);
+
+}
+
+.hero-text h2{
+
+    color:#dbeafe;
+}
+
+.hero-text p{
+
+    color:#cbd5e1;
+
+    line-height:1.6;
+}
+
+
+/* MOVIES PAGE */
+
+.movies-page{
+
+    padding:60px;
+
+    text-align:center;
+}
+
+.movies-page h1{
+
+    font-size:55px;
+}
+
+.movies-page h2{
+
+    color:#dbeafe;
+}
+
+
+/* CARDS */
+
+.choices{
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 50px;
+
+    flex-wrap: wrap;
+
+    margin-top: 50px;
+}
+
+.choices a{
+
+    display:inline-block;
+
+    width:240px;
+
+    padding:25px;
+
+    margin:20px;
+
+    border-radius:20px;
+
+    background-color:rgba(15,25,40,0.85);
+
+    border:3px solid #e50914;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:25px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+
+    box-shadow:0 0 15px rgba(208, 5, 5, 0.5);
+}
+
+.choices a:hover{
+
+    transform:
+
+    translateY(-10px)
+
+    scale(1.05);
+
+    background-color:rgba(229,9,20,0.15);
+
+    box-shadow:0 0 30px red;
+}
+
+
+/* BACK BUTTON */
+
+.back-home{
+    margin: 20px 0 40px 0;
+    text-align: center;
+}
+
+.back-home a{
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: rgba(0,0,0,0.7);
+    border: 2px solid red;
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-home a:hover{
+    background-color: rgb(34, 45, 173);
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px red;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 60px;
+    background-color: rgba(0, 0, 0, 0.75);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+
+.navbar h2{
+    color: white;
+    margin: 0;
+    
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.navbar a:hover{
+    color: #e50914;
+}
+
+.actor-card{
+
+    width: 280px;
+
+    height: 300px;
+
+    padding: 30px;
+
+    border: 3px solid red;
+
+    border-radius: 20px;
+
+    background-color: rgba(15,25,40,0.85);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+.actor-card h2{
+    margin-bottom: 20px;
+    white-space: nowrap;
+    font-size: 24px;
+}
+
+.choices .actor-card{
+    width: 280px;
+    height: 260px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.actor-card p{
+
+    line-height: 1.5;
+}
+
+.tobey{
+
+    width: 75%;
+
+    margin: auto;
+
+    padding-top: 100px;
+}
+
+.tobey h1{
+
+    text-align: center;
+
+    font-size: 50px;
+
+    margin-bottom: 60px;
+
+    text-shadow: 0 0 15px red;
+}
+
+.andrew{
+
+    width: 75%;
+
+    margin: auto;
+
+    padding-top: 100px;
+}
+
+.andrew h1{
+
+    text-align: center;
+
+    font-size: 50px;
+
+    margin-bottom: 60px;
+
+    text-shadow: 0 0 15px red;
+}
+
+.tom{
+
+    width: 75%;
+
+    margin: auto;
+
+    padding-top: 100px;
+}
+
+.tom h1{
+
+    text-align: center;
+
+    font-size: 50px;
+
+    margin-bottom: 60px;
+
+    text-shadow: 0 0 15px red;
+}
+.movie-card{
+
+    background-color: rgba(0,0,0,0.75);
+
+    padding: 35px;
+
+    margin-bottom: 50px;
+
+    border-left: 6px solid red;
+
+    border-radius: 20px;
+
+    box-shadow: 0 0 20px rgba(229,9,20,0.3);
+
+    transition: 0.3s;
+}
+
+.movie-card:hover{
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 0 30px red;
+}
+
+.movie-card h2{
+
+    color: #dbeafe;
+}
+
+.movie-card p{
+
+    line-height: 1.8;
+
+    text-align: justify;
+}
+
+.actor-info{
+
+    text-align: center;
+}
+
+.movies-page{
+
+    background-image: url("movies.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+
+}
+.movies-page{
+
+    position: relative;
+}
+
+.movies-page::before{
+
+    content:"";
+
+    position: fixed;
+
+    top:0;
+
+    left:0;
+
+    width:150%;
+
+    height:150%;
+
+    background-color: rgba(0,0,0,0.7);
+
+    z-index:-1;
+}
+.shows{
+
+    background-image:url("tvshows.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+}
+.shows{
+    position: center;
+}
+.shows::before{
+    content:"";
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:150%;
+    background-color: rgba(0,0,0,0.7);
+    z-index:-1;
+}
+.shows{
+    text-align: center;
+    background-image:url("tvshows.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+.shows p{
+    text-align:center;
+    font-size:22px;
+    font-family: Geneva, Tahoma, sans-serif;
+}
+/* GAMES MAIN PAGE */
+
+.games-page{
+   min-height:100vh;
+    text-align:center;
+    padding:60px;
+    background-image:url("games.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    position:relative;
+}
+
+.games-page::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.65);
+    z-index:-1;
+}
+
+
+.games-page h1{
+    font-size:55px;
+    text-shadow:0 0 15px red;
+}
+
+.games-page h2{
+    color:#dbeafe;
+}
+
+.games-page p{
+    font-size:20px;
+}
+
+
+/* GAME ERA PAGES */
+
+.game-background{
+    min-height:100vh;
+    background-image:url("games.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.game-background::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.65);
+    z-index:-1;
+}
+
+.games-era{
+    width:85%;
+    margin:auto;
+    padding-top:10px;
+    text-align:center;
+}
+
+.games-era h1{
+    font-size:55px;
+    margin-top:0;
+    margin-bottom:25px;
+    text-shadow:0 0 15px red;
+}
+
+.games-era h2{
+    color:#dbeafe;
+}
+
+.games-era p{
+    font-size:20px;
+}
+
+.games-era .movie-card{
+    text-align:left;
+    margin:35px auto;
+}
